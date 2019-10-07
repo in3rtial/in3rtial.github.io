@@ -30,9 +30,8 @@ Another alternative is to use a get-with-default operator.
     {
         // do not optimize to return by reference, dflt would not work properly
         auto pos = map.find(key);
-        return (pos != map.end()) ? (pos->second) : deflt);
+        return (pos != map.end()) ? (pos->second) : dflt;
     }
-
 
 {% endhighlight %}
 
